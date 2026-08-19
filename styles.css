@@ -21,3 +21,5 @@
 .catalog-grid article{min-width:0;overflow:hidden}
 .catalog-grid h2,.catalog-grid p{max-width:100%;overflow-wrap:anywhere}
 @media(max-width:620px){.brand-mark{width:42px;height:42px}.footer-brand .brand-mark{width:36px;height:36px}.catalog-grid article>div{height:230px}.product-image img,.catalog-grid img{inset:18px;width:calc(100% - 36px);height:calc(100% - 36px)}}
+.contact h2{color:var(--white)}
+.contact-details{color:var(--white)}

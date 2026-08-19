@@ -36,6 +36,14 @@ mainNav?.querySelectorAll('a').forEach((link) => link.addEventListener('click', 
   menuButton.setAttribute('aria-expanded', 'false');
 }));
 
+document.querySelectorAll('.back-to-top').forEach((link) => link.addEventListener('click', (event) => {
+  event.preventDefault();
+  window.scrollTo({
+    top: 0,
+    behavior: window.matchMedia('(prefers-reduced-motion: reduce)').matches ? 'auto' : 'smooth'
+  });
+}));
+
 const factoryImages = ['assets/workshop-vertical.png', 'assets/workshop-horizontal.png', 'assets/workshop-auto.png', 'assets/robot-line.jpg'];
 let factoryIndex = 0;
 const factoryImage = document.querySelector('#factoryImage');
